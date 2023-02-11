@@ -25,7 +25,7 @@
           <li class="nav-li"><a class="nav-link" >Outros</a></li>
         </ul>
       </nav>
-      <img src=" https://i.postimg.cc/dVVkHZKp/menu.png" class="menu-icon">
+      <img src=" https://i.postimg.cc/dVVkHZKp/menu.png" class="menu-icon" onclick="showMenu()">
     </div>
 
     <div class="row">
@@ -52,12 +52,18 @@
     </div>
   </div>
 </body>
-
 <script>
-  const menulist = document.getElementById("menu-list")
+  const menuList = document.getElementById("menu-list")
+  menuList.style.maxHeight = "0px"
 
-  console.log(menu-list)
-</script>
+  function showMenu() {
+     if(menuList.style.maxHeight == "0px"){
+        menuList.style.maxHeight = "120px"
+     } else {
+        menuList.style.maxHeight = "0px"
+     }
+  }
+  </script>
 
 
 
