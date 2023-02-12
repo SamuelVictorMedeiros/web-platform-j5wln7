@@ -16,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .container {
@@ -38,7 +37,7 @@ body {
 
 .logo {
   width: 50px;
-  margin: 30px 0,
+  margin: 30px 0;
 }
 
 nav {
@@ -98,7 +97,6 @@ h3 {
   position: absolute;
   left: -40px;
   top: 8px;
-
 }
 
 h4 {
@@ -110,16 +108,33 @@ h4 {
 .buy {
   width: 140px;
   border: none;
-  padding: 12px;
+  padding: 12px 10px;
   outline: none;
   color: white;
   border-radius: 6px;
   cursor: pointer;
   z-index: 2;
   background: linear-gradient(to right, #fb5283, #ff3527);
+  transition: all 0.5s ease-in-out;
 }
 
-.column-2{
+.buy img {
+  width: 30px;
+  display: none;
+}
+
+.buy:hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+}
+.buy:hover img {
+  display: block;
+}
+
+.column-2 {
   display: flex;
   align-items: center;
   position: relative;
@@ -161,9 +176,9 @@ h4 {
   align-items: center;
 }
 .social-links img {
-   height: 20px;
-   margin: 20px;
-   cursor: pointer;
+  height: 20px;
+  margin: 20px;
+  cursor: pointer;
 }
 
 .menu-icon {
@@ -171,44 +186,40 @@ h4 {
   margin-right: 15px;
   display: none;
 }
-@media (max-width: 760px){
-    .container {
-      width: 100vw;
-      height: 100vh;
-      border-radius: 0;
-      overflow-y: auto;
-    }
+@media (max-width: 760px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    overflow-y: auto;
+  }
 
-    .row {
-      flex-direction: column-reverse;
-    }
+  .row {
+    flex-direction: column-reverse;
+  }
 
-    .column-2 {
-      margin-bottom: 30px;
-    }
+  .column-2 {
+    margin-bottom: 30px;
+  }
 
-    .color-box {
-      transform: translateX(70px); 
-    }
+  .color-box {
+    transform: translateX(70px);
+  }
+  #menu-list {
+    position: relative;
+    top: 60px;
+    left: 60px;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+  }
 
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
 
-
-
-    #menu-list {
-      position: relative;
-      top: 60px;
-      left: 60px;
-      overflow: hidden;
-    }
-
-    .menu-icon {
-      display: block;
-    }
-
-    .nav-li {
-      display: block;
-      margin-top: 5px;
-    }
+  .nav-li {
+    display: block;
+    margin-top: 5px;
+  }
 }
-
-
