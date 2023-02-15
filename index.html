@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="styles.css">
-  <title>playstation store</title>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>playstation store</title>
+  </head>
 
-<body>
-  <div class="container">
-    <div class="navbar">
-      <img class="logo" src="https://i.postimg.cc/5tHH1cym/logo.png">
-      <nav >
-        <ul id="menu-list">
-          <li class="nav-li"><a class="nav-link" >Consoles</a></li>
-          <li class="nav-li"><a class="nav-link" >Acessorios</a></li>
-          <li class="nav-li"><a class="nav-link" >Controles</a></li>
-          <li class="nav-li"><a class="nav-link" >Outros</a></li>
-        </ul>
-      </nav>
-      <img src=" https://i.postimg.cc/dVVkHZKp/menu.png" class="menu-icon" onclick="showMenu()">
-    </div>
-
-    <div class="row">
-      <div class="column-1">
-        <h2>PS5 Dualshock</h2>
-        <h3>Wireless Controller for Playstation</h3>
-        <p>Controle Original</p>
-        <h4>R$ 222,50</h4>
-        <button class="buy">Comprar Agora <img src="https://i.postimg.cc/8PDrvnX1/arrow.png"></button>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img class="logo" src="https://i.postimg.cc/5tHH1cym/logo.png" />
+        <nav>
+          <ul id="menu-list">
+            <li class="nav-li">
+              <a href="consoles.html" class="nav-link">Consoles</a>
+            </li>
+            <li class="nav-li">
+              <a href="acessorios.html" class="nav-link">Acessorios</a>
+            </li>
+            <li class="nav-li">
+              <a href="controlle.html" class="nav-link">Controles</a>
+            </li>
+            <li class="nav-li">
+              <a href="outros.html" class="nav-link">Outros</a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          src=" https://i.postimg.cc/dVVkHZKp/menu.png"
+          class="menu-icon"
+          onclick="showMenu()"
+        />
       </div>
-      <div class="column-2">
-        <img class="controller" src="https://i.postimg.cc/DztSw-Cb3/controller.png">
-        <div class="color-box"></div>
-        <button class="add-cart">
-          <img src="https://i.postimg.cc/gjyX5vjF/add.png">
-        </button>
+
+      <div class="row">
+        <div class="column-1">
+          <h2>PS5 Dualshock</h2>
+          <h3>Wireless Controller for Playstation</h3>
+          <p>Controle Original</p>
+          <h4>R$ 222,50</h4>
+          <button class="buy">
+            Comprar Agora <img src="https://i.postimg.cc/8PDrvnX1/arrow.png" />
+          </button>
+        </div>
+        <div class="column-2">
+          <img
+            class="controller"
+            src="https://i.postimg.cc/DztSw-Cb3/controller.png"
+          />
+          <div class="color-box"></div>
+          <button class="add-cart">
+            <img src="https://i.postimg.cc/gjyX5vjF/add.png" />
+          </button>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <img src="https://i.postimg.cc/RCwHNzRs/fb.png" />
+        <img src="https://i.postimg.cc/2S9qPjk6/ig.png" />
+        <img src="https://i.postimg.cc/QxbKJkvc/tw.png" />
       </div>
     </div>
+  </body>
+  <script>
+    const menuList = document.getElementById('menu-list');
+    menuList.style.maxHeight = '0px';
 
-    <div class="social-links">
-     <img src="https://i.postimg.cc/RCwHNzRs/fb.png">
-     <img src="https://i.postimg.cc/2S9qPjk6/ig.png">
-     <img src="https://i.postimg.cc/QxbKJkvc/tw.png">
-    </div>
-  </div>
-</body>
-<script>
-  const menuList = document.getElementById("menu-list")
-  menuList.style.maxHeight = "0px"
-
-  function showMenu() {
-     if(menuList.style.maxHeight == "0px"){
-        menuList.style.maxHeight = "120px"
-     } else {
-        menuList.style.maxHeight = "0px"
-     }
-  }
+    function showMenu() {
+      if (menuList.style.maxHeight == '0px') {
+        menuList.style.maxHeight = '120px';
+      } else {
+        menuList.style.maxHeight = '0px';
+      }
+    }
   </script>
 </html>
